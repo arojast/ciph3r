@@ -16,6 +16,13 @@ class ProductPrice extends Model
         'state',
     ];
 
+    protected $hidden = [
+        'created_by',
+        'created_at',
+        'updated_by',
+        'updated_at',
+    ];
+
     protected function casts(): array
     {
         return [
