@@ -11,6 +11,9 @@ class ProductPrice extends Model
         'product_id',
         'currency_id',
         'price',
+        'created_by',
+        'updated_by',
+        'state',
     ];
 
     protected function casts(): array
