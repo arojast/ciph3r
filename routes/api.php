@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\ProductPriceController;
+use App\Http\Controllers\Api\CurrencyController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -24,4 +25,6 @@ Route::middleware('auth:sanctum')->group(function () {
         '/products/{productId}/prices',
         [ProductPriceController::class, 'store']
     );
+
+    Route::apiResource('currencies', CurrencyController::class);
 });

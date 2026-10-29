@@ -11,6 +11,8 @@ class Currency extends Model
         'name',
         'symbol',
         'exchange_rate',
+        'created_by',
+        'updated_by',
         'state',
     ];
 
