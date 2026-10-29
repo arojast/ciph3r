@@ -35,7 +35,7 @@ class AuthController extends Controller
         );
 
         return response()->json([
-            'message' => 'Login successful.',
+            'message' => 'Inicio de sesión exitoso.',
             'token_type' => 'Bearer',
             'access_token' => $token->plainTextToken,
             'expires_at' => $token->accessToken->expires_at,
@@ -61,7 +61,7 @@ class AuthController extends Controller
         $request->user()->currentAccessToken()->delete();
 
         return response()->json([
-            'message' => 'Logout successful.',
+            'message' => 'Cierre de sesión exitoso.',
         ]);
     }
 }

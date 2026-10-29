@@ -15,6 +15,9 @@ class Product extends Model
         'currency_id',
         'tax_cost',
         'manufacturing_cost',
+        'created_by',
+        'updated_by',
+        'state',
     ];
 
     protected function casts(): array
